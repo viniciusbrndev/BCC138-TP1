@@ -13,8 +13,10 @@ public:
 
     // Método virtual puro para permitir polimorfismo
     virtual int getPoderAtaque() = 0;
-    
+    virtual void print();
+
     void somaDestruicao();
+    
     int getDestruicoes() const;
 };
 

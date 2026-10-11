@@ -13,6 +13,7 @@ public:
     ~Veiculo() override = default;
 
     int getPoderAtaque() override;
+    void print() override;
 };
 
 } // namespace Jogo
