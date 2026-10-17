@@ -20,8 +20,8 @@ Exercito::Exercito(const std::string& nome){
 // Destrutor
 Exercito::~Exercito(){}
 
-void Exercito::adicionarUnidade(Unidade& unidade){
-    this->unidades.push_back(std::unique_ptr<Unidade>(&unidade));
+void Exercito::adicionarUnidade(std::unique_ptr<Unidade> unidade){
+    this->unidades.push_back(std::move(unidade));
 }
 std::string Exercito::getResultados() const{
     return "Vitórias: " + std::to_string(vitorias) + "Empates: " + std::to_string(empates) + "Derrotas: " + std::to_string(derrotas);

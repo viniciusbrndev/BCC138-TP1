@@ -1,7 +1,10 @@
 #pragma once
 #include <string>
+#include <memory>
+
 #include "Date.hpp"
 #include "Exercito.hpp"
+
 
 namespace Jogo {
 

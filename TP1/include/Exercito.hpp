@@ -19,7 +19,7 @@ public:
     explicit Exercito(const std::string& nome);
     ~Exercito(); // Destrutor para desalocar as Unidades dinâmicas
 
-    void adicionarUnidade(Unidade& unidade);
+    void adicionarUnidade(std::unique_ptr<Unidade> unidade);
     std::string getResultados() const;
     void imprimeUnidades() const;
 
